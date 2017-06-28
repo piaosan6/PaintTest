@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pjm.painttest.Weight.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_add0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bitmapShader效果"/>
+
+        <Button
+            android:id="@+id/btn_add1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shapeDrawable效果"/>
+
+        <Button
+            android:id="@+id/btn_add2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LinearGradient效果"/>
+        <Button
+            android:id="@+id/btn_add3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadialGradient效果"/>
+        <Button
+            android:id="@+id/btn_add4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SweepGradient渐变效果"/>
+        <Button
+            android:id="@+id/btn_add5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雷达扫描效果"/>
+
+
+    </com.pjm.painttest.Weight.FlowLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_shader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

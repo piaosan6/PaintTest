@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".BaseTest.DashViewTestActivity" />
+        <activity android:name=".BaseTest.PathDashPathViewActivity" />
+        <activity android:name=".BaseTest.PaintBaseTestActivity" />
+        <activity android:name=".CustomProgress.CircleProgressTestActivity" />
+        <activity android:name=".BaseTest.MinionTestActivity" />
+        <activity android:name=".ShaderTest.ShaderViewTestActivity" />
+        <activity android:name=".LoadingView.SplashViewTestActivity" />
+        <activity android:name=".XferModeTest.XferModeCaseTestActivity" />
+        <activity android:name=".XferModeTest.XferModeTestActivity" />
+        <activity android:name=".MaskFilterTest.MaskFilterTestActivity" />
+        <activity android:name=".MaskFilterTest.BlurMaskTestActivity" />
+        <activity android:name=".MaskFilterTest.EmbossMaskTestActivity" />
+        <activity android:name=".MaskFilterTest.ColorMatrixTestActivity"></activity>
     </application>
 
 </manifest>

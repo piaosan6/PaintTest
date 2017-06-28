@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+<com.pjm.painttest.Weight.FlowLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_add0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="放大镜效果1"/>
+
+    <Button
+        android:id="@+id/btn_add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="放大镜效果2"/>
+
+    <Button
+        android:id="@+id/btn_add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刮奖效果"/>
+    <Button
+        android:id="@+id/btn_add3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刮奖效果2"/>
+
+    <Button
+        android:id="@+id/btn_add4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刮奖效果3"/>
+
+    <Button
+        android:id="@+id/btn_add5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="橡皮擦效果"/>
+
+    <Button
+        android:id="@+id/btn_add6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒影效果"/>
+
+    <Button
+        android:id="@+id/btn_add7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="倒影效果2"/>
+
+
+
+
+</com.pjm.painttest.Weight.FlowLayout>
+
+
+
+<LinearLayout
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+

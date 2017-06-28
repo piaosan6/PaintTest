@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pjm.painttest.CustomProgress.CircleProgressTestActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="startAnim" />
+
+    <com.pjm.painttest.CustomProgress.customView.CircleProgress
+        android:id="@+id/cp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:ArcWidth="20dp"
+        app:textSize="30dp"
+        app:progressColor="#3F51B5"
+        app:textColor="#00ffcc" />
+
+</LinearLayout>

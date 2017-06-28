@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.pjm.painttest.Weight.FlowLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="原图" />
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="黑白" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="底片" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="旧照片" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="怀旧" />
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="浮雕" />
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="宝丽来彩色" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="泛红" />
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="泛黄" />
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="荧光绿" />
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="宝石蓝" />
+        <Button
+            android:id="@+id/btn11"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="亮度增强" />
+        <Button
+            android:id="@+id/btn12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="饱和度增强" />
+        <Button
+            android:id="@+id/btn13"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="红颜色旋转" />
+        <Button
+            android:id="@+id/btn14"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="绿颜色旋转" />
+        <Button
+            android:id="@+id/btn15"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="12sp"
+            android:text="蓝颜色旋转" />
+
+        <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="500"/>
+
+    </com.pjm.painttest.Weight.FlowLayout>
+
+    <com.pjm.painttest.MaskFilterTest.customView.ColorMatrixView
+        android:layout_marginTop="10dp"
+        android:id="@+id/colorMatrixView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
