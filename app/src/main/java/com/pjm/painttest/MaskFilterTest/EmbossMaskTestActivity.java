@@ -2,16 +2,16 @@ package com.pjm.painttest.MaskFilterTest;
 
 import android.graphics.EmbossMaskFilter;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.SeekBar;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.MaskFilterTest.customView.EmBossView;
 import com.pjm.painttest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class EmbossMaskTestActivity extends AppCompatActivity {
+public class EmbossMaskTestActivity extends BaseActivity {
 
 
     @BindView(R.id.sb1)
@@ -38,7 +38,7 @@ public class EmbossMaskTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emboss_mask_test);
-        ButterKnife.bind(this);
+        unbinder = ButterKnife.bind(this);
         init();
 
         /**

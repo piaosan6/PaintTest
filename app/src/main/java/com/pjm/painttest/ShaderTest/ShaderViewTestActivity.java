@@ -1,11 +1,11 @@
 package com.pjm.painttest.ShaderTest;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.R;
 import com.pjm.painttest.ShaderTest.customView.BitmapShaderView;
 import com.pjm.painttest.ShaderTest.customView.LinearGradientShaderView;
@@ -17,9 +17,8 @@ import com.pjm.painttest.ShaderTest.customView.SweepGradientView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class ShaderViewTestActivity extends AppCompatActivity {
+public class ShaderViewTestActivity extends BaseActivity {
 
     @BindView(R.id.ll_shader)
     LinearLayout llShader;
@@ -34,7 +33,6 @@ public class ShaderViewTestActivity extends AppCompatActivity {
     Button btnAdd3;
     @BindView(R.id.btn_add4)
     Button btnAdd4;
-    private Unbinder unbinder;
     private RadarView rv;
     private boolean hasStart;
 
@@ -90,9 +88,4 @@ public class ShaderViewTestActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
 }

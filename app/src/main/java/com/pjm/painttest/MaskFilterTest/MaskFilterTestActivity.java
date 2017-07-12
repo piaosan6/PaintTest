@@ -1,30 +1,26 @@
 package com.pjm.painttest.MaskFilterTest;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 /**
  * 滤镜测试
  */
-public class MaskFilterTestActivity extends AppCompatActivity {
+public class MaskFilterTestActivity extends BaseActivity {
 
     @BindView(R.id.btn0)
     Button btn0;
     @BindView(R.id.btn1)
     Button btn1;
-    private Unbinder unbinder;
-    private Context mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +47,5 @@ public class MaskFilterTestActivity extends AppCompatActivity {
         }
     }
 
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
 
 }

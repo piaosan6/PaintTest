@@ -1,8 +1,8 @@
 package com.pjm.painttest.CustomProgress;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.CustomProgress.customView.CircleProgress;
 import com.pjm.painttest.R;
 
@@ -11,13 +11,11 @@ import java.util.Random;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class CircleProgressTestActivity extends AppCompatActivity {
+public class CircleProgressTestActivity extends BaseActivity {
 
     @BindView(R.id.cp)
     CircleProgress cp;
-    private Unbinder unbinder;
     private Random random;
 
     @Override
@@ -33,12 +31,6 @@ public class CircleProgressTestActivity extends AppCompatActivity {
     public void startAnim() {
         int percent =  random.nextInt(100);
         cp.setPercentWithAnim(percent);
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
     }
 
 }

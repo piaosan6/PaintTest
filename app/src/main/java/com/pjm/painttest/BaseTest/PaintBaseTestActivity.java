@@ -1,19 +1,18 @@
 package com.pjm.painttest.BaseTest;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.BaseTest.customView.MyView;
 import com.pjm.painttest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class PaintBaseTestActivity extends AppCompatActivity {
+public class PaintBaseTestActivity extends BaseActivity {
 
     @BindView(R.id.btn1)
     Button btn1;
@@ -38,7 +37,6 @@ public class PaintBaseTestActivity extends AppCompatActivity {
 
     @BindView(R.id.myView)
     MyView view;
-    private Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,12 +97,6 @@ public class PaintBaseTestActivity extends AppCompatActivity {
 //                break;
 
         }
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
     }
 
 }

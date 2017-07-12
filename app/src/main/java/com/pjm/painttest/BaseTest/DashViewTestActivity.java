@@ -1,24 +1,22 @@
 package com.pjm.painttest.BaseTest;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 
-import com.pjm.painttest.R;
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.BaseTest.customView.MyDashView;
+import com.pjm.painttest.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class DashViewTestActivity extends AppCompatActivity {
+public class DashViewTestActivity extends BaseActivity {
 
     @BindView(R.id.dashView)
     MyDashView dashView;
     @BindView(R.id.btn)
     Button btn;
-    private Unbinder unbinder;
 
 
     @Override
@@ -34,10 +32,6 @@ public class DashViewTestActivity extends AppCompatActivity {
         dashView.startAnim();
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
+
 
 }

@@ -2,13 +2,13 @@ package com.pjm.painttest.XferModeTest;
 
 import android.graphics.PorterDuff;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.R;
 import com.pjm.painttest.Utils.L;
 import com.pjm.painttest.XferModeTest.CustomView.XferModeBaseView;
@@ -16,9 +16,8 @@ import com.pjm.painttest.XferModeTest.CustomView.XferModeBaseView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class XferModeTestActivity extends AppCompatActivity {
+public class XferModeTestActivity extends BaseActivity {
 
     @BindView(R.id.rb1)
     RadioButton rb1;
@@ -61,7 +60,6 @@ public class XferModeTestActivity extends AppCompatActivity {
     @BindView(R.id.ll_xferMode)
     LinearLayout llXferMode;
 
-    private Unbinder unbinder;
     private XferModeBaseView civ;
 
     @Override
@@ -170,10 +168,4 @@ public class XferModeTestActivity extends AppCompatActivity {
     }
 
 
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
 }

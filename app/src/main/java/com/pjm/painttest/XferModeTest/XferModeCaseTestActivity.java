@@ -1,11 +1,11 @@
 package com.pjm.painttest.XferModeTest;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.R;
 import com.pjm.painttest.XferModeTest.XferModeCase.EraserView;
 import com.pjm.painttest.XferModeTest.XferModeCase.GuaGuaKaView;
@@ -19,9 +19,8 @@ import com.pjm.painttest.XferModeTest.XferModeCase.ReflectionView2;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class XferModeCaseTestActivity extends AppCompatActivity {
+public class XferModeCaseTestActivity extends BaseActivity {
 
     @BindView(R.id.btn_add0)
     Button btnAdd0;
@@ -31,7 +30,6 @@ public class XferModeCaseTestActivity extends AppCompatActivity {
     Button btnAdd2;
     @BindView(R.id.ll)
     LinearLayout ll;
-    private Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,13 +76,6 @@ public class XferModeCaseTestActivity extends AppCompatActivity {
                 ll.addView(new ReflectionView2(this));
                 break;
         }
-    }
-
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
     }
 
 }

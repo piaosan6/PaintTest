@@ -2,11 +2,11 @@ package com.pjm.painttest.MaskFilterTest;
 
 import android.graphics.ColorMatrix;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.SeekBar;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.MaskFilterTest.customView.ColorMatrixView;
 import com.pjm.painttest.R;
 import com.pjm.painttest.Utils.L;
@@ -14,12 +14,11 @@ import com.pjm.painttest.Utils.L;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
 /**
  * 参考：http://blog.csdn.net/harvic880925/article/details/51187277/
  */
-public class ColorMatrixTestActivity extends AppCompatActivity {
+public class ColorMatrixTestActivity extends BaseActivity {
 
     @BindView(R.id.btn0)
     Button btn0;
@@ -60,7 +59,6 @@ public class ColorMatrixTestActivity extends AppCompatActivity {
     private float factory;
     private int selectId;
 
-    private Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -338,10 +336,4 @@ public class ColorMatrixTestActivity extends AppCompatActivity {
 
             */
 
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
 }

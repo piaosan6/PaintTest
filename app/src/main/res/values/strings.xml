@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">PaintTest</string>
+    <string name="title_activity_canvas_base">CanvasBaseActivity</string>
 </resources>

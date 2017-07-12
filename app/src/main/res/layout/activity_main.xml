@@ -75,6 +75,26 @@
         android:textSize="12sp"
         android:text="MaskFilter测试" />
 
+    <Button
+        android:id="@+id/btnCanvasTest"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:text="画布测试" />
+
+    <Button
+        android:id="@+id/btnPathTest"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:text="Path测试" />
+    <Button
+        android:id="@+id/btnPathMeasureTest"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:text="PathMeasure测试" />
+
     </com.pjm.painttest.Weight.FlowLayout>
 
 

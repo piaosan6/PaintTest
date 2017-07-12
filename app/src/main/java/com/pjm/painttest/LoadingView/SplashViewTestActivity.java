@@ -1,18 +1,14 @@
 package com.pjm.painttest.LoadingView;
 
-import android.app.Activity;
-import android.content.Context;
 import android.os.Bundle;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.R;
 
 import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
-public class SplashViewTestActivity extends Activity {
+public class SplashViewTestActivity extends BaseActivity {
 
-    private Context mContext;
-    private Unbinder unbinder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +29,5 @@ public class SplashViewTestActivity extends Activity {
 //        }
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
+
 }

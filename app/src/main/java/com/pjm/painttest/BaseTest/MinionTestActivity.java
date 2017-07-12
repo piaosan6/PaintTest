@@ -1,11 +1,11 @@
 package com.pjm.painttest.BaseTest;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.R;
 
-public class MinionTestActivity extends AppCompatActivity {
+public class MinionTestActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

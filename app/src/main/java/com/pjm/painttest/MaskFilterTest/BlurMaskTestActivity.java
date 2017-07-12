@@ -2,11 +2,11 @@ package com.pjm.painttest.MaskFilterTest;
 
 import android.graphics.BlurMaskFilter;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import com.pjm.painttest.BaseActivity;
 import com.pjm.painttest.MaskFilterTest.customView.BlurView;
 import com.pjm.painttest.R;
 
@@ -14,7 +14,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class BlurMaskTestActivity extends AppCompatActivity {
+public class BlurMaskTestActivity extends BaseActivity {
 
     @BindView(R.id.ll)
     LinearLayout ll;
@@ -38,7 +38,7 @@ public class BlurMaskTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_blur_mask_test);
-        ButterKnife.bind(this);
+        unbinder =  ButterKnife.bind(this);
 
         /**
          * radius很容易理解，值越大我们的阴影越扩散

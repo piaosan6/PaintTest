@@ -28,7 +28,19 @@
         <activity android:name=".MaskFilterTest.MaskFilterTestActivity" />
         <activity android:name=".MaskFilterTest.BlurMaskTestActivity" />
         <activity android:name=".MaskFilterTest.EmbossMaskTestActivity" />
-        <activity android:name=".MaskFilterTest.ColorMatrixTestActivity"></activity>
+        <activity android:name=".MaskFilterTest.ColorMatrixTestActivity" />
+        <activity android:name=".CanvasTest.CanvasTestActivity" />
+        <activity android:name=".CanvasTest.MyDrawableTestActivity" />
+        <activity
+            android:name=".CanvasTest.CanvasBaseActivity"
+            android:label="@string/title_activity_canvas_base"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CanvasTest.SearchViewTestActivity" />
+        <activity android:name=".PathTest.PathTestActivity" />
+        <activity android:name=".PathTest.PathBaseTestActivity" />
+        <activity android:name=".PathTest.WaveViewTestActivity" />
+        <activity android:name=".PathTest.DragBubbleViewTestActivity" />
+        <activity android:name=".PathMeasurTest.PathMeasureTestActivity"></activity>
     </application>
 
 </manifest>

@@ -1,9 +1,7 @@
 package com.pjm.painttest;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -11,9 +9,12 @@ import com.pjm.painttest.BaseTest.DashViewTestActivity;
 import com.pjm.painttest.BaseTest.MinionTestActivity;
 import com.pjm.painttest.BaseTest.PaintBaseTestActivity;
 import com.pjm.painttest.BaseTest.PathDashPathViewActivity;
+import com.pjm.painttest.CanvasTest.CanvasTestActivity;
 import com.pjm.painttest.CustomProgress.CircleProgressTestActivity;
 import com.pjm.painttest.LoadingView.SplashViewTestActivity;
 import com.pjm.painttest.MaskFilterTest.MaskFilterTestActivity;
+import com.pjm.painttest.PathMeasurTest.PathMeasureTestActivity;
+import com.pjm.painttest.PathTest.PathTestActivity;
 import com.pjm.painttest.ShaderTest.ShaderViewTestActivity;
 import com.pjm.painttest.XferModeTest.XferModeCaseTestActivity;
 import com.pjm.painttest.XferModeTest.XferModeTestActivity;
@@ -21,9 +22,8 @@ import com.pjm.painttest.XferModeTest.XferModeTestActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import butterknife.Unbinder;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     @BindView(R.id.btnPaintBase)
     Button btnPaintBase;
@@ -45,8 +45,12 @@ public class MainActivity extends AppCompatActivity {
     Button btnXferMode;
     @BindView(R.id.btnMaskFilter)
     Button btnMaskFilter;
-    private Unbinder unbinder;
-    private Context mContext;
+    @BindView(R.id.btnCanvasTest)
+    Button btnCanvasTest;
+    @BindView(R.id.btnPathTest)
+    Button btnPathTest;
+    @BindView(R.id.btnPathMeasureTest)
+    Button btnPathMeasureTest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick({R.id.btnPaintBase, R.id.btnDashTest, R.id.btnDashPathTest, R.id.btnCircle, R.id.btnMinion, R.id.btnShader, R.id.btnLoad,
-            R.id.btnXferModeUse, R.id.btnXferMode, R.id.btnMaskFilter})
+            R.id.btnXferModeUse, R.id.btnXferMode, R.id.btnMaskFilter, R.id.btnCanvasTest, R.id.btnPathTest, R.id.btnPathMeasureTest})
     public void OnClick(View v) {
         switch (v.getId()) {
             case R.id.btnPaintBase:
@@ -96,15 +100,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(mContext, MaskFilterTestActivity.class));
                 break;
 
+            case R.id.btnCanvasTest:
+                startActivity(new Intent(mContext, CanvasTestActivity.class));
+                break;
+
+            case R.id.btnPathTest:
+                startActivity(new Intent(mContext, PathTestActivity.class));
+                break;
+            case R.id.btnPathMeasureTest:
+                startActivity(new Intent(mContext, PathMeasureTestActivity.class));
+                break;
+
         }
     }
-
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        unbinder.unbind();
-    }
-
-
 }
