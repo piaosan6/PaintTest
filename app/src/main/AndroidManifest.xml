@@ -40,7 +40,11 @@
         <activity android:name=".PathTest.PathBaseTestActivity" />
         <activity android:name=".PathTest.WaveViewTestActivity" />
         <activity android:name=".PathTest.DragBubbleViewTestActivity" />
-        <activity android:name=".PathMeasurTest.PathMeasureTestActivity"></activity>
+        <activity android:name=".PathMeasurTest.PathMeasureTestActivity" />
+        <activity android:name=".PathMeasurTest.SearchViewTestActivity" />
+        <activity android:name=".PathMeasurTest.SVGTestActivity" />
+        <activity android:name=".PathMeasurTest.LoadingViewTestActivity" />
+        <activity android:name=".PingTest.NetWorkPingActivity"></activity>
     </application>
 
 </manifest>

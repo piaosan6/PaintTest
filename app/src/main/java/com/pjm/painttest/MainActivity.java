@@ -15,6 +15,7 @@ import com.pjm.painttest.LoadingView.SplashViewTestActivity;
 import com.pjm.painttest.MaskFilterTest.MaskFilterTestActivity;
 import com.pjm.painttest.PathMeasurTest.PathMeasureTestActivity;
 import com.pjm.painttest.PathTest.PathTestActivity;
+import com.pjm.painttest.PingTest.NetWorkPingActivity;
 import com.pjm.painttest.ShaderTest.ShaderViewTestActivity;
 import com.pjm.painttest.XferModeTest.XferModeCaseTestActivity;
 import com.pjm.painttest.XferModeTest.XferModeTestActivity;
@@ -51,6 +52,8 @@ public class MainActivity extends BaseActivity {
     Button btnPathTest;
     @BindView(R.id.btnPathMeasureTest)
     Button btnPathMeasureTest;
+    @BindView(R.id.btnNet)
+    Button btnNet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +66,13 @@ public class MainActivity extends BaseActivity {
     }
 
     @OnClick({R.id.btnPaintBase, R.id.btnDashTest, R.id.btnDashPathTest, R.id.btnCircle, R.id.btnMinion, R.id.btnShader, R.id.btnLoad,
-            R.id.btnXferModeUse, R.id.btnXferMode, R.id.btnMaskFilter, R.id.btnCanvasTest, R.id.btnPathTest, R.id.btnPathMeasureTest})
+            R.id.btnXferModeUse, R.id.btnXferMode, R.id.btnMaskFilter, R.id.btnCanvasTest, R.id.btnPathTest, R.id.btnPathMeasureTest,
+            R.id.btnNet})
     public void OnClick(View v) {
         switch (v.getId()) {
+            case R.id.btnNet:
+                startActivity(new Intent(mContext, NetWorkPingActivity.class));
+                break;
             case R.id.btnPaintBase:
                 startActivity(new Intent(mContext, PaintBaseTestActivity.class));
                 break;

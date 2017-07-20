@@ -99,14 +99,16 @@ public class SearchView extends View implements View.OnClickListener{
         cxMaxMove = (float) (w/2f - drawPadding - Math.cos(Math.toRadians(45)) * (radius + handlerLen));
         cx += cxMaxMove;
         rectF = new RectF(cx - radius, cy - radius, cx + radius, cy + radius);
-
+        // 这里采用2条path来实现
         mPathLine.moveTo(cx + offsetRadius, cy + offsetRadius);
         mPathLine.lineTo(w - drawPadding, cy + offsetHandler);
         mPathLine.lineTo(drawPadding, cy + offsetHandler);
-        // 如果是一个path 包含下面的圆获取总长度，需要
+
         mPathArc.addArc(rectF, 45, 359.99f);
 
         pathMeasureLine = new PathMeasure(mPathLine, false);
+        //这里得到的length是当前mPathMeasure指向线段的长度，并不是path总长度，
+        // 如果要得到总长度需要通过nextContour来遍历mPathMeasure，得到每段长度再加起来
         lineLength = pathMeasureLine.getLength();
 
         pathMeasureArc =  new PathMeasure(mPathArc, false);

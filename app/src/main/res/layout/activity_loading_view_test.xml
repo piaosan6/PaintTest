@@ -4,17 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
-
-    <com.pjm.painttest.CanvasTest.customView.SearchView2
-        android:id="@+id/searchView"
+    <com.pjm.painttest.PathMeasurTest.customView.LoadingView
+        android:id="@+id/loadingView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:clickable="true"/>
-
-
-
+        android:layout_height="match_parent" />
 
 </LinearLayout>
