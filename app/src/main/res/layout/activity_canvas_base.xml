@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pjm.painttest.Weight.FlowLayout
+    <com.pjm.painttest.weight.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -36,9 +36,9 @@
             android:textSize="12sp"
             android:text="画布裁剪测试"/>
 
-    </com.pjm.painttest.Weight.FlowLayout>
+    </com.pjm.painttest.weight.FlowLayout>
 
-    <com.pjm.painttest.CanvasTest.customView.CanvasView
+    <com.pjm.painttest.canvasTest.customView.CanvasView
         android:id="@+id/canvasView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

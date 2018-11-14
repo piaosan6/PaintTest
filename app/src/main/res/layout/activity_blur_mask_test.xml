@@ -48,11 +48,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.pjm.painttest.MaskFilterTest.customView.BlurView
+            <com.pjm.painttest.maskFilterTest.customView.BlurView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <com.pjm.painttest.MaskFilterTest.customView.BlurView
+            <com.pjm.painttest.maskFilterTest.customView.BlurView
                 android:id="@+id/blurView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pjm.painttest.MaskFilterTest.customView.EmBossView
+    <com.pjm.painttest.maskFilterTest.customView.EmBossView
         android:id="@+id/emBossView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

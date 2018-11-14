@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f4f4"
+    android:gravity="center_horizontal" >
+
+    <com.pjm.painttest.customView.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_marginTop="10dp"
+        android:layout_width="53dp"
+        android:layout_height="53dp" />
+
+
+
+    <com.pjm.painttest.customView.MyShadowView
+        android:layout_width="343dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        app:bgStartColor="#219fff"
+        app:bgEndColor="#66d5ff"
+        app:shadowAngle="0"
+        app:shadowDx="0dp"
+        app:shadowDy="3.3dp"
+        app:shadowColor="#4fB1DBFB"
+        app:shadowRadius="2dp"/>
+
+    <com.pjm.painttest.customView.MyShadowView
+        android:layout_width="343dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        app:bgStartColor="#219fff"
+        app:bgEndColor="#66d5ff"
+        app:shadowAngle="0"
+        app:shadowDx="0dp"
+        app:shadowDy="3dp"
+        app:shadowColor="#5f210aff"
+        app:shadowRadius="3dp" />
+
+    <com.pjm.painttest.customView.MyShadowView
+        android:layout_width="343dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        app:bgStartColor="#219fff"
+        app:bgEndColor="#66d5ff"
+        app:shadowAngle="0"
+        app:shadowDx="0dp"
+        app:shadowDy="3dp"
+        app:shadowColor="#7fcccccc"
+        app:shadowRadius="3dp"/>
+
+    <com.pjm.painttest.customView.MyShadowView
+        android:layout_width="343dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="10dp"
+        app:bgStartColor="#219fff"
+        app:bgEndColor="#66d5ff"
+        app:shadowAngle="0"
+        app:shadowDx="0dp"
+        app:shadowDy="2dp"
+        app:shadowColor="#2f210aff"
+        app:shadowRadius="3.3dp" />
+    <!--0xff219fff, 0xff66d5ff-->
+
+    <com.pjm.painttest.customView.MyShadowView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:bgStartColor="#219fff"
+        app:bgEndColor="#66d5ff"
+        app:shadowAngle="0"
+        app:shadowDx="3dp"
+        app:shadowDy="3.3dp"
+        app:shadowColor="#4f210aff"
+        app:shadowRadius="3dp"
+        />
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg2">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="强求帐号"
+            android:textColor="#99000000"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFinanceManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="财务管理"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg2">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="强求帐号"
+            android:textColor="#99000000"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/btn_bg"
+        android:gravity="center"
+        android:text="财务管理"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+-->
+<!-- android:background="@mipmap/anniu_icon"-->
+
+</LinearLayout>

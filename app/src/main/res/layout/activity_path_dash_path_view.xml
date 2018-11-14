@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pjm.painttest.BaseTest.PathDashPathViewActivity">
+    tools:context="com.pjm.painttest.baseTest.PathDashPathViewActivity">
 
-    <com.pjm.painttest.BaseTest.customView.PathDashPathView
+    <com.pjm.painttest.baseTest.customView.PathDashPathView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

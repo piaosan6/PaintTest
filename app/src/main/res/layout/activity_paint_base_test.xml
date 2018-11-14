@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pjm.painttest.Weight.FlowLayout
+    <com.pjm.painttest.weight.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -76,9 +76,9 @@
             android:textSize="8sp"
             android:text="drawSubpixelText" />
 
-    </com.pjm.painttest.Weight.FlowLayout>
+    </com.pjm.painttest.weight.FlowLayout>
 
-    <com.pjm.painttest.BaseTest.customView.MyView
+    <com.pjm.painttest.baseTest.customView.MyView
         android:id="@+id/myView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

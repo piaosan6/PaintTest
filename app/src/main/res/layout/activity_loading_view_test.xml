@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pjm.painttest.PathMeasurTest.customView.LoadingView
+    <com.pjm.painttest.pathMeasurTest.customView.LoadingView
         android:id="@+id/loadingView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

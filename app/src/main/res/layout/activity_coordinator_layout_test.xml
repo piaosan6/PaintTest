@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_scrollFlags="scroll">
+
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="1dp"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:focusable="true"  />
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBaseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:contentDescription="@null"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="44dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_scrollFlags="scroll">
+
+        <ImageView
+            android:id="@+id/imgLeft"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="1dp"
+            android:layout_gravity="start"
+            android:clickable="true"
+            android:focusable="true"  />
+
+        <TextView
+            android:id="@+id/tvLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvBaseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="标题"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imgRight"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="12dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            android:visibility="gone"
+            android:contentDescription="@null"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/tvRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minWidth="44dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-6dp"
+        android:layout_marginEnd="-6dp"
+        android:fillViewport="true"
+        android:background="@drawable/white_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#00ff00"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="-45dp"
+        android:background="@drawable/btn_bg4"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</LinearLayout>
+-->
+<!--<android.support.design.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    &lt;!&ndash;包裹头部View实现滑动效果&ndash;&gt;
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll">
+            &lt;!&ndash;?attr/custom_attr_app_title_layout_bg&ndash;&gt;
+
+            <ImageView
+                android:id="@+id/imgLeft"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="1dp"
+                android:layout_gravity="start"
+                android:clickable="true"
+                android:focusable="true"  />
+
+            <TextView
+                android:id="@+id/tvLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginStart="12dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvBaseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="标题"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+            <ImageView
+                android:id="@+id/imgRight"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="12dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="16dp"
+                android:visibility="gone"
+                android:contentDescription="@null"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <TextView
+                android:id="@+id/tvRight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:minWidth="44dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="end"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#00ff00"
+            app:layout_scrollFlags="scroll"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.pjm.painttest.CustomView.SlideRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-6dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_marginBottom="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@drawable/white_bg"/>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_bg4"
+        android:text="确认"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:layout_gravity="bottom"/>
+
+</android.support.design.widget.CoordinatorLayout>-->

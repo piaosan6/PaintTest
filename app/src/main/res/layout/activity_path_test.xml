@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pjm.painttest.Weight.FlowLayout
+    <com.pjm.painttest.weight.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -34,9 +34,9 @@
             android:textSize="10sp"
             android:text="拖拽气泡测试"/>
 
-    </com.pjm.painttest.Weight.FlowLayout>
+    </com.pjm.painttest.weight.FlowLayout>
 
-    <com.pjm.painttest.PathTest.customView.TrashView
+    <com.pjm.painttest.pathTest.customView.TrashView
         android:id="@+id/trashView"
         android:visibility="visible"
         android:layout_width="match_parent"

@@ -10,7 +10,7 @@
         android:src="@mipmap/zm"
         android:scaleType="centerCrop"/>
 
-    <com.pjm.painttest.LoadingView.SplashView
+    <com.pjm.painttest.loadingView.SplashView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

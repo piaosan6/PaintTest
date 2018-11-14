@@ -6,7 +6,7 @@
 
 
 
-    <com.pjm.painttest.Weight.FlowLayout
+    <com.pjm.painttest.weight.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -132,7 +132,7 @@
 
 
 
-    </com.pjm.painttest.Weight.FlowLayout>
+    </com.pjm.painttest.weight.FlowLayout>
 
 
     <ScrollView

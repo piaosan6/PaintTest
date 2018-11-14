@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">PaintTest</string>
     <string name="title_activity_canvas_base">CanvasBaseActivity</string>
+
+    <string name="remainNum">剩余用量：%1$s</string>
+    <string name="gasTitle">燃气表(m³)</string>
+    <string name="pulse">脉冲</string>
+    <string name="about_us_str">湖北猷米特物联网科技有限公司是基于智能水、热、气、电四表的能源物联网平台服务商，专业从事物联网相关产品与解决方案服务的高科技公司，基于物联网开发一系列的智能设备应用产品，米小丫App实现智能表的移动充值缴费、社区电商、社区社交、社区游戏，云平台的大数据挖掘为能耗分折、节能减排提供数据支撑，助力传统产业新旧动能转换，同时还为智慧城市提供对接接口。\n\n联系人：李工  13971220399\n地址：武汉市东西湖区金银潭现代企业城B12栋3楼</string>
+
 </resources>

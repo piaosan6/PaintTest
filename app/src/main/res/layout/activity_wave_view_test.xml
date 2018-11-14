@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     
-    <com.pjm.painttest.PathTest.customView.WaveView
+    <com.pjm.painttest.pathTest.customView.WaveView
         android:id="@+id/waveView"
         android:layout_width="match_parent"
         android:layout_height="0dp"

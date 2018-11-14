@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pjm.painttest.CustomProgress.CircleProgressTestActivity"
+    tools:context="com.pjm.painttest.customProgress.CircleProgressTestActivity"
     android:orientation="vertical">
 
     <Button
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:text="startAnim" />
 
-    <com.pjm.painttest.CustomProgress.customView.CircleProgress
+    <com.pjm.painttest.customProgress.customView.CircleProgress
         android:id="@+id/cp"
         android:layout_width="200dp"
         android:layout_height="200dp"

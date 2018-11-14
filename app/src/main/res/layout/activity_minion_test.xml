@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pjm.painttest.BaseTest.MinionTestActivity">
+    tools:context="com.pjm.painttest.baseTest.MinionTestActivity">
 
-    <com.pjm.painttest.BaseTest.customView.MinionView
+    <com.pjm.painttest.baseTest.customView.MinionView
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

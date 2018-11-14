@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pjm.painttest">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,42 +11,56 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".boot.SplashActivity"
+            android:theme="@style/AppThemeFullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BaseTest.DashViewTestActivity" />
-        <activity android:name=".BaseTest.PathDashPathViewActivity" />
-        <activity android:name=".BaseTest.PaintBaseTestActivity" />
-        <activity android:name=".CustomProgress.CircleProgressTestActivity" />
-        <activity android:name=".BaseTest.MinionTestActivity" />
-        <activity android:name=".ShaderTest.ShaderViewTestActivity" />
-        <activity android:name=".LoadingView.SplashViewTestActivity" />
-        <activity android:name=".XferModeTest.XferModeCaseTestActivity" />
-        <activity android:name=".XferModeTest.XferModeTestActivity" />
-        <activity android:name=".MaskFilterTest.MaskFilterTestActivity" />
-        <activity android:name=".MaskFilterTest.BlurMaskTestActivity" />
-        <activity android:name=".MaskFilterTest.EmbossMaskTestActivity" />
-        <activity android:name=".MaskFilterTest.ColorMatrixTestActivity" />
-        <activity android:name=".CanvasTest.CanvasTestActivity" />
-        <activity android:name=".CanvasTest.MyDrawableTestActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".baseTest.DashViewTestActivity" />
+        <activity android:name=".baseTest.PathDashPathViewActivity" />
+        <activity android:name=".baseTest.PaintBaseTestActivity" />
+        <activity android:name=".customProgress.CircleProgressTestActivity" />
+        <activity android:name=".baseTest.MinionTestActivity" />
+        <activity android:name=".shaderTest.ShaderViewTestActivity" />
+        <activity android:name=".loadingView.SplashViewTestActivity" />
+        <activity android:name=".xferModeTest.XferModeCaseTestActivity" />
+        <activity android:name=".xferModeTest.XferModeTestActivity" />
+        <activity android:name=".maskFilterTest.MaskFilterTestActivity" />
+        <activity android:name=".maskFilterTest.BlurMaskTestActivity" />
+        <activity android:name=".maskFilterTest.EmbossMaskTestActivity" />
+        <activity android:name=".maskFilterTest.ColorMatrixTestActivity" />
+        <activity android:name=".canvasTest.CanvasTestActivity" />
+        <activity android:name=".canvasTest.MyDrawableTestActivity" />
         <activity
-            android:name=".CanvasTest.CanvasBaseActivity"
+            android:name=".canvasTest.CanvasBaseActivity"
             android:label="@string/title_activity_canvas_base"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CanvasTest.SearchViewTestActivity" />
-        <activity android:name=".PathTest.PathTestActivity" />
-        <activity android:name=".PathTest.PathBaseTestActivity" />
-        <activity android:name=".PathTest.WaveViewTestActivity" />
-        <activity android:name=".PathTest.DragBubbleViewTestActivity" />
-        <activity android:name=".PathMeasurTest.PathMeasureTestActivity" />
-        <activity android:name=".PathMeasurTest.SearchViewTestActivity" />
-        <activity android:name=".PathMeasurTest.SVGTestActivity" />
-        <activity android:name=".PathMeasurTest.LoadingViewTestActivity" />
-        <activity android:name=".PingTest.NetWorkPingActivity"></activity>
+        <activity android:name=".canvasTest.SearchViewTestActivity" />
+        <activity android:name=".pathTest.PathTestActivity" />
+        <activity android:name=".pathTest.PathBaseTestActivity" />
+        <activity android:name=".pathTest.WaveViewTestActivity" />
+        <activity android:name=".pathTest.DragBubbleViewTestActivity" />
+        <activity android:name=".pathMeasurTest.PathMeasureTestActivity" />
+        <activity android:name=".pathMeasurTest.SearchViewTestActivity" />
+        <activity android:name=".pathMeasurTest.SVGTestActivity" />
+        <activity android:name=".pathMeasurTest.LoadingViewTestActivity" />
+        <activity android:name=".pingTest.NetWorkPingActivity" />
+        <activity android:name=".baseTest.CustomViewTestActivity" />
+        <activity android:name=".netTest.NetTestActivity" />
+        <activity android:name=".rxJavaTest.RxjavaTestActivity" />
+        <activity android:name=".baseTest.SimpleTestActivity" />
+        <activity android:name=".slideDelete.SlideRecyclerViewActivity" />
+        <activity
+            android:name=".coordinatorLayoutTest.CoordinatorLayoutTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".dialogTest.DialogTestActivity" />
+        <activity android:name=".dialogTest.DialogTest2Activity"></activity>
     </application>
 
 </manifest>

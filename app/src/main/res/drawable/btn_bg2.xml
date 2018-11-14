@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="#51b4ff"
+                android:endColor="#85deff"
+                android:angle="0"/>
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+
+    <item  android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <gradient android:startColor="#219fff"
+                android:endColor="#66d5ff"
+                android:angle="0"/>
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+
+    <item  android:state_enabled="false" >
+        <shape>
+            <solid android:color="#cccccc" />
+            <corners android:radius="30dp"/>
+        </shape>
+    </item>
+
+</selector>
+<!-- 65d5ff
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item  android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/text_pressed" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+    <item  android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/text_normal" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item  android:state_enabled="false" >
+        <shape>
+            <solid android:color="@color/grayC" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+
+</selector>-->

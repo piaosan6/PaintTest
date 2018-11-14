@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:gravity="center">
 
-    <com.pjm.painttest.PathTest.customView.DragBubbleView2
+    <com.pjm.painttest.pathTest.customView.DragBubbleView2
         android:id="@+id/dragBubbleView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"

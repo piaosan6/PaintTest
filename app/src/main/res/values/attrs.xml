@@ -16,5 +16,15 @@
         <attr name="bubble_textSize" format="dimension"/>
         <attr name="bubble_textColor" format="color"/>
     </declare-styleable>
-    
+
+    <declare-styleable name="MyShadowView">
+        <attr name="shadowDx" format="dimension"/>
+        <attr name="shadowDy" format="dimension"/>
+        <attr name="shadowAngle" format="integer"/>
+        <attr name="shadowColor" format="color|reference"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="bgStartColor" format="color|reference"/>
+        <attr name="bgEndColor" format="color|reference"/>
+    </declare-styleable>
+
 </resources>

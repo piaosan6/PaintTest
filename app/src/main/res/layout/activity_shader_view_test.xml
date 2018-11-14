@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.pjm.painttest.Weight.FlowLayout
+    <com.pjm.painttest.weight.FlowLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -42,7 +42,7 @@
             android:text="雷达扫描效果"/>
 
 
-    </com.pjm.painttest.Weight.FlowLayout>
+    </com.pjm.painttest.weight.FlowLayout>
 
 
 

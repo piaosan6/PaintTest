@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:text="startAnim" />
 
-    <com.pjm.painttest.BaseTest.customView.MyDashView
+    <com.pjm.painttest.baseTest.customView.MyDashView
         android:id="@+id/dashView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
