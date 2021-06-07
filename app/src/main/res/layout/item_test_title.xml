@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:paddingStart="50dp"
+        android:paddingEnd="10dp"
+        android:text="标题"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical"/>
+
+    <CheckBox
+        android:id="@+id/cbTitle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        android:gravity="center"
+        android:padding="6dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/tvTitle"
+        app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

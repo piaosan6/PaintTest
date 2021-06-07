@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shadow.ShadowTestActivity">
+
+    <com.pjm.painttest.shadow.ShadowLayout
+        android:id="@+id/mShadowLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:hl_cornerRadius="10dp"
+        app:hl_shadowColor="#2a000000"
+        app:hl_shadowLimit="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txt_test"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="圆角"
+            android:layout_gravity="center"
+            android:textColor="#000" />
+
+    </com.pjm.painttest.shadow.ShadowLayout>
+
+    <com.pjm.painttest.shadow.ShadowLayout
+        android:id="@+id/mShadowLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:hl_shadowColor="#40b2b2b2"
+        app:hl_shadowLimit="5dp"
+        app:hl_shadowOffsetY="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mShadowLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center"
+            android:textColor="#000" />
+
+    </com.pjm.painttest.shadow.ShadowLayout>
+
+<!--
+    <com.pjm.painttest.shadow.ShadowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:hl_bindTextView="@+id/txt_press"
+        app:hl_cornerRadius="18dp"
+        android:layout_marginStart="10dp"
+        app:layout_goneMarginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:hl_layoutBackground="#FF9800"
+        app:hl_layoutBackground_true="#ff0000"
+        app:hl_shapeMode="pressed"
+        app:hl_textColor_true="#fff"
+        app:hl_text="点我，press样式"
+        app:hl_text_true="我改变了文案了" >
+
+        <TextView
+            android:id="@+id/txt_press"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="点我，press样式"
+            android:textColor="#000" />
+
+    </com.pjm.painttest.shadow.ShadowLayout>
+-->
+
+</android.support.constraint.ConstraintLayout>

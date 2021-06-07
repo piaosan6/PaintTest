@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="permissions">
+        <item>请求录音权限</item>
+        <item>请求获取联系人权限</item>
+        <item>请求获取手机状态权限</item>
+        <item>请求呼叫权限</item>
+        <item>请求相机权限</item>
+        <item>定位权限</item>
+        <item>定位权限</item>
+        <item>读取sd卡权限</item>
+        <item>写入sd卡权限</item>
+    </string-array>
+
+</resources>

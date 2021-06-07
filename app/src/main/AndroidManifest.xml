@@ -2,7 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pjm.painttest">
 
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> <!-- 存储读写权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- android 9.0上使用前台服务，需要添加权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" /> <!-- 闪光灯 -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- 使用照相机权限 -->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +39,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".recyclerViewTest.RecyclerViewTestActivity"></activity>
+        <activity android:name=".timeTest.TimeTestActivity" />
+        <activity android:name=".runtimepermissions.PermissionsTestActivity" />
+        <activity android:name=".shadow.ShadowTestActivity" />
+        <activity android:name=".textViewTest.TextSizeColorActivity" />
         <activity
             android:name=".boot.SplashActivity"
             android:theme="@style/AppThemeFullScreen">
@@ -60,7 +93,7 @@
             android:name=".coordinatorLayoutTest.CoordinatorLayoutTestActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".dialogTest.DialogTestActivity" />
-        <activity android:name=".dialogTest.DialogTest2Activity"></activity>
+        <activity android:name=".dialogTest.DialogTest2Activity" />
     </application>
 
 </manifest>
